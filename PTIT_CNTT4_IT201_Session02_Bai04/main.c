@@ -2,25 +2,34 @@
 
 int main(void) {
     int n;
-    printf("Nhap so luong phan tu ");
+    printf("Nhap so luong phan tu: ");
     scanf("%d", &n);
-    int position=0;
-    int value=0;
+
+    int position = 0;
+    int value = 0;
     int arr[n];
-    for (int i=0;i<n;i++) {
-        printf("Phan tu thu %d \t \n",i+1);
+    for (int i = 0; i < n; i++) {
+        printf("Phan tu thu %d: ", i);
         scanf("%d", &arr[i]);
     }
-    for (int i=0;i<n;i++) {
-        printf(" %d \t \n",arr[i]);
+    printf("Mang ban dau:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d\t", arr[i]);
     }
-    printf("Nhap vi tri muon sua \t");
-    scanf(" %d",&position);
-    printf("Nhap gia tri muon sua \t ");
-    scanf(" %d",&value);
-    arr[position-1]=value;
-    for (int i=0;i<n;i++) {
-        printf(" %d \t \n",arr[i]);
+    printf("\nNhap vi tri muon sua (bat dau tu 0): ");
+    scanf("%d", &position);
+    printf("Nhap gia tri moi: ");
+    scanf("%d", &value);
+    if (position >= 0 && position < n) {
+        arr[position] = value;
+    } else {
+        printf("Vi tri khong hop le!\n");
+        return 1; 
     }
+    printf("Mang sau khi sua:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d\t", arr[i]);
+    }
+
     return 0;
 }

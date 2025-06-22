@@ -15,7 +15,11 @@ int main(void) {
     reverseArray(a, n);
     return 0;
 }
+<<<<<<< HEAD
 void reverseArray(int *arr, int size) {
+=======
+ void reverseArray(int *arr, int size) {
+>>>>>>> 246aff6d666d588f5fa4fc44acc5010c0c8f552b
     for (int i = 0; i < size / 2; i++) {
         int temp = arr[i];
         arr[i] = arr[size - 1 - i];
