@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.31"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "PTIT_CNTT4_IT201_Session07_Bai08",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "PTIT_CNTT4_IT201_Session07_Bai08::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PTIT_CNTT4_IT201_Session07_Bai08-Debug-14951abb8cc72865382e.json",
+					"name" : "PTIT_CNTT4_IT201_Session07_Bai08",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/Code DSA/PTIT_CNTT4_IT201_Session07/PTIT_CNTT4_IT201_Session07_Bai08/cmake-build-debug",
+		"source" : "E:/Code DSA/PTIT_CNTT4_IT201_Session07/PTIT_CNTT4_IT201_Session07_Bai08"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
