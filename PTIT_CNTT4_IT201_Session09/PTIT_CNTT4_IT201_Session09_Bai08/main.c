@@ -35,6 +35,7 @@ int countList(struct Node* head) {
         current = current->next;
     }
     return count;
+    free(current);
 }
  struct Node* addNode(struct Node* head,int value) {
     struct Node* newNode=creatNode(value);
