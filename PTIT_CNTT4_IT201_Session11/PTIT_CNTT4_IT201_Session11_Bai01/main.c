@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Node {
+ typedef struct Node {
      int data;
      struct Node* next;
      struct Node* prev;
- };
+ }Node;
 void printList(struct Node* head) {
     int count =1;
     struct Node* temp = head;
@@ -127,16 +127,21 @@ struct Node* deleteByValue(struct Node* head, int data) {
     return head;
 }
 int main(void) {
-    struct Node* head=NULL;
-     int n;
-    printf("NHap so luong phan tu");
-    scanf("%d",&n);
-    for (int i=0;i<n;i++) {
-        int data;
-        printf("Nhap data");
-        scanf("%d",&data);
-        head=addLastList(head,data);
-    }
+
+    Node* n1 = creatNode(1);
+    Node* n2 = creatNode(2);
+    Node* n3 = creatNode(3);
+    Node* n4 = creatNode(4);
+    Node* n5 = creatNode(5);
+
+
+    n1->next = n2;
+    n2->prev = n1; n2->next = n3;
+    n3->prev = n2; n3->next = n4;
+    n4->prev = n3; n4->next = n5;
+    n5->prev = n4;
+
+    Node* head = n1;
     printList(head);
 
 
