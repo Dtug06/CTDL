@@ -26,8 +26,8 @@ int getLength(struct Node* head) {
          temp=temp->next;
          count++;
      }
-     return count;
      free(temp);
+     return count;
  }
  struct Node* addLastList(struct Node* head) {
      if (head == NULL) {
