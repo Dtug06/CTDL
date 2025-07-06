@@ -7,9 +7,11 @@ struct Node {
      struct Node* prev;
  };
 void printList(struct Node* head) {
+    int count =1;
     struct Node* temp = head;
     while(temp != NULL) {
-        printf("%d ", temp->data);
+        printf(  " Node %d : %d  \n ",count, temp->data);
+        count++;
         temp = temp->next;
     }
     printf("\n");
