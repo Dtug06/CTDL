@@ -126,6 +126,10 @@ int main(void) {
      head=deleteLast(head);
      printList(head);
 
+     printf("Xoa phan co data la : ");
+     scanf("%d",&data);
+     head=deleteByData(data,head);
+     printList(head);
 
     return 0;
 }

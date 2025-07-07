@@ -1,4 +1,9 @@
 #include <stdio.h>
+
+int main(void) {
+    printf("Hello, World!\n");
+    return 0;
+}#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct Node{
@@ -126,6 +131,7 @@ int main(void) {
      head=deleteLast(head);
      printList(head);
 
-
+     struct Node* mid= searchMiddle(head);
+     printf("Phan tu o giua list la %d",mid->data);
     return 0;
 }

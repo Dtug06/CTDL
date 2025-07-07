@@ -126,6 +126,9 @@ int main(void) {
      head=deleteLast(head);
      printList(head);
 
+     printf("Xoa phan tu cuoi ");
+     head=deleteLast(head);
+     printList(head);
 
     return 0;
 }

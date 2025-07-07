@@ -126,6 +126,13 @@ int main(void) {
      head=deleteLast(head);
      printList(head);
 
+     printf("Them phan tu vao cuoi mang ");
+     int data;
+     printf("NHap data");
+     scanf("%d",&data);
+     head=addLastList(data,head);
+     printList(head);
+
 
     return 0;
 }
