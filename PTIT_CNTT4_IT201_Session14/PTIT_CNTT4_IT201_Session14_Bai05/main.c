@@ -42,13 +42,15 @@ void printStack(stack *s) {
     }
     printf("\n");
 }
-int  first(stack *s) {
+int first(stack *s, int *value) {
     if (isEmpty(s)) {
-        printf("Mang rong mat ruiii!");
-        return -1;
+        printf("Mang rong mat ruiii!\n");
+        return 0; // nếu trong trường hợp phần tử đầu tiên là -1 sẽ gây ra lỗi nên sẽ trả về  o
     }
-    return s->top->data;
+    *value = s->top->data;
+    return 1;
 }
+
 int main(void) {
     stack s;
     initStack(&s);
@@ -63,9 +65,9 @@ int main(void) {
     }
     printStack(&s);
     printf("Phan tu dau tien \n");
-    int data=first(&s);
-    if (data!=-1) {
-        printf("%d",data);
+    int value;
+    if (first(&s, &value)) {
+        printf("Phan tu dau tien: %d\n", value);
     }
     return 0;
 }
