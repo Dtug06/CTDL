@@ -23,7 +23,7 @@ void addEdge(Graph *graph, int src, int dest) {
     }
 }
 void printGraph(Graph *graph) {
-    printf("Ma trận kề:\n");
+    printf("ma tran ke:\n");
     for (int i = 0; i < graph->V; i++) {
         for (int j = 0; j < graph->V; j++) {
             printf("%d ", graph->matrix[i][j]);
@@ -31,7 +31,6 @@ void printGraph(Graph *graph) {
         printf("\n");
     }
 }
-
 void freeGraph(Graph *graph) {
     for (int i = 0; i < graph->V; i++) {
         free(graph->matrix[i]);
